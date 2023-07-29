@@ -102,7 +102,7 @@ exports.GetUserById = (req, res) => {
 exports.deleteUserbyId = (req, res) => {
   const id = req.params.id;
   User.destroy({
-    //hapus dengan id = id yang sama dengan token
+    //hapus dengan id = id params
     where: { id: id },
   })
     .then((num) => {

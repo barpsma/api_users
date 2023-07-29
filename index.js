@@ -1,13 +1,19 @@
 const express = require("express");
+const Sequelize = require("sequelize");
 const app = express();
+const server = require("http").createServer(app);
 require("dotenv").config();
 // const port = 3000
 const port = process.env.PORT;
+const sequelize = new Sequelize(
+  config.database,
+  config.username,
+  config.password,
+  config
+);
 const bodyParser = require("body-parser");
 const Route = require("./route/route");
 const RouteLogin = require("./route/routelogin");
-// const swaggerJSON = require('./openapi_bingle.json')
-// const swaggerUI = require('swagger-ui-express')
 
 app.use(
   bodyParser.urlencoded({
@@ -17,10 +23,9 @@ app.use(
 
 app.use(bodyParser.json());
 
-// app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerJSON))
-
-// app.get('/', (req,res)=> res.send('halo dunia'))
 app.use("/api/users/", Route);
-app.use("/api/", Route);
+app.use("/api/", RouteLogin);
 
 app.listen(port, () => console.log(`listening port ${port}`));
+
+module.exports = server;
