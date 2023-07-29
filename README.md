@@ -4,7 +4,7 @@ Test Rekrutmen Backend PT HERBA PENAWAR ALWAHIDA INDONESIA
 
 ## Postman Documentations
 
-Import TodoListFull_Deploy.json to your Postman and enjoy
+Import ApiUserTesRekrutmenHPAI.postman_collection.json to your Postman and enjoy
 
 ## Installation
 
