@@ -50,11 +50,17 @@ Migrate database
 sequelize db:migrate
 ```
 
+## Testing
+
+```bash
+npm test
+```
+
 ## Usage
 
 Make sure nodejs already installed on your computer
 
-```javascript
+```bash
 npm start
 ```
 
