@@ -17,4 +17,4 @@ RUN npm i -g sequelize-cli
 RUN npm i -g nodemon
 
 # Perintah untuk menjalankan aplikasi
-ENTRYPOINT [ "./entrypoint.sh" ]
+ENTRYPOINT [ "bash", "entrypoint.sh" ]
