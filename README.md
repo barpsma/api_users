@@ -4,7 +4,7 @@ Test Rekrutmen Backend PT HERBA PENAWAR ALWAHIDA INDONESIA
 
 # ERD
 
-![image.png](<{https://github.com/barpsma/api_users/blob/b71f47270813ea879aa5d36037bfd0037dd7a5b1/ERD%20(Entity%20Relationship%20Diagram)/ERD.png}>)
+![image.png](<{https://github.com/barpsma/api_users/blob/main/ERD%20(Entity%20Relationship%20Diagram)/ERD.png}>)
 
 ## Installation
 
