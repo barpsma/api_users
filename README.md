@@ -71,6 +71,10 @@ docker exec -it api_users-web-1 sh
 npm test
 ```
 
+The result should be like this
+
+![unit test](https://github.com/barpsma/DFD_ERD_API_USERS/assets/79141552/3f2835ee-da03-416a-bee3-85867caabf25)
+
 if the error is related to NODE_ENV, follow these steps
 
 ```bash
