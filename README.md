@@ -48,7 +48,7 @@ nano /config/config.json
 nano docker-compose.yml
 ```
 
-edit line 11 and 13 for password mysql
+edit line 11 and 13 in "docker-compose.yml" for password mysql
 
 ## Testing
 
