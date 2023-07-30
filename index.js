@@ -19,6 +19,11 @@ app.use(bodyParser.json());
 app.use("/api/users/", Route);
 app.use("/api/", RouteLogin);
 
-app.listen(port, () => console.log(`listening port ${port}`));
+// app.listen(port, () => console.log(`listening port ${port}`));
+if (process.env.NODE_ENV !== "test") {
+  server.listen(port, () => {
+    console.log("server running in port " + port);
+  });
+}
 
 module.exports = server;

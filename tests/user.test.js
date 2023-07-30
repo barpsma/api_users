@@ -78,6 +78,6 @@ describe("Get User by ID", () => {
 
 describe("Delete User by ID", () => {
   it("hapus user by id dan status 200 saat token sesuai", () => {
-    request(app).get("/api/users/1").set("token", token).expect(200);
+    request(app).delete("/api/users/1").set("token", token).expect(200);
   });
 });

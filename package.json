@@ -4,7 +4,7 @@
   "description": "Tes Rekrutmen PT HPAI",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "NODE_ENV=test jest --watchAll --verbose --coverage --maxWorkers=1",
     "start": "nodemon index.js"
   },
   "author": "Muhammad Akbar",

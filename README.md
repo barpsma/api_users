@@ -2,10 +2,6 @@
 
 Test Rekrutmen Backend PT HERBA PENAWAR ALWAHIDA INDONESIA
 
-## Postman Documentations
-
-Import ApiUserTesRekrutmenHPAI.postman_collection.json to your Postman and enjoy
-
 ## Installation
 
 Clone this repo
@@ -36,6 +32,30 @@ Run in docker
 docker-compose up -d --build
 ```
 
+## Testing
+
+Make sure docker container already running, wait a few moments until the db container has finished checking healthy
+
+open shell
+
+```bash
+docker exec -it api_users-web-1 sh
+```
+
+```bash
+npm test
+```
+
+if the error is related to NODE_ENV, follow these steps
+
+```bash
+npm install -g win-node-env
+```
+
+## Postman Documentations
+
+Import ApiUserTesRekrutmenHPAI.postman_collection.json to your Postman and enjoy
+
 ## Optional
 
 for configure config database
@@ -50,21 +70,16 @@ nano docker-compose.yml
 
 edit line 11 and 13 in "docker-compose.yml" for password mysql
 
-## Testing
-
-Make sure docker container already running
-
-open shell
+Adminer
 
 ```bash
-docker exec -it api_users-web-1 sh
+http://localhost:8081/
 ```
 
-and
-
-```bash
-npm test
-```
+system : mysql
+server : db
+username : root
+password : akbar
 
 ## License
 

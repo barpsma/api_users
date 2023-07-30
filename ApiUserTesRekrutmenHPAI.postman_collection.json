@@ -12,7 +12,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkwNTUyNTIxfQ.S8kcYVV6ovJTSsz2zIbNZdklS-iuz8glENsBjWFJiBM",
+						"value": "",
 						"type": "default"
 					}
 				],
@@ -37,7 +37,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"admin 4 tumbal\",\r\n    \"email\":\"admin4@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"role\":\"admin\"\r\n}",
+					"raw": "{\r\n    \"name\":\"user4 testing\",\r\n    \"email\":\"user4@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"role\":\"user\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -65,7 +65,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkwNTUyNTIxfQ.S8kcYVV6ovJTSsz2zIbNZdklS-iuz8glENsBjWFJiBM",
+						"value": "",
 						"type": "default"
 					}
 				],
@@ -91,12 +91,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkwNTUyNTIxfQ.S8kcYVV6ovJTSsz2zIbNZdklS-iuz8glENsBjWFJiBM",
+						"value": "",
 						"type": "default"
 					}
 				],
 				"url": {
-					"raw": "localhost:3000/api/users/6",
+					"raw": "localhost:3000/api/users/5",
 					"host": [
 						"localhost"
 					],
@@ -104,7 +104,7 @@
 					"path": [
 						"api",
 						"users",
-						"6"
+						"5"
 					]
 				}
 			},
@@ -117,7 +117,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"barmuhammad@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+					"raw": "{\r\n    \"email\":\"admin1@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

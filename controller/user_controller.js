@@ -9,7 +9,7 @@ exports.getAllUser = (req, res) => {
     })
     .catch((error) => {
       res.status(400).json({
-        message: "tidak ada",
+        message: "tidak ada user",
         error: error,
       });
     });
@@ -33,6 +33,7 @@ exports.LoginUser = async (req, res) => {
       };
       //sign token dengan yang ada di .env
       const token = await jsonwebtoken.sign(data, process.env.JWT_SECRET, {
+        //expires 1 jam
         expiresIn: 60 * 60,
       });
       return res.status(200).json({
@@ -109,11 +110,11 @@ exports.deleteUserbyId = (req, res) => {
   })
     .then((num) => {
       if (num == 1) {
-        res.send({
+        res.status(200).send({
           message: "User berhasil dihapus",
         });
       } else {
-        res.send({
+        res.status(400).send({
           message: `gagal hapus user dengan id=${id}. mungkin user sudah tidak ada`,
         });
       }
