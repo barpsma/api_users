@@ -6,6 +6,20 @@ Test Rekrutmen Backend PT HERBA PENAWAR ALWAHIDA INDONESIA
 
 ![ERD](https://github.com/barpsma/DFD_ERD_API_USERS/assets/79141552/8744a9fc-2b79-4b5c-8c29-a16ee46119c2)
 
+# DFD
+
+![DFD Level 0 API Users](https://github.com/barpsma/DFD_ERD_API_USERS/assets/79141552/4cf075b7-4c80-4307-b616-927db3cc81e3)
+
+![DFD Level 1 proses Register](https://github.com/barpsma/DFD_ERD_API_USERS/assets/79141552/98ccade0-ed61-4787-8997-35b096110628)
+
+![DFD Level 1 proses Login](https://github.com/barpsma/DFD_ERD_API_USERS/assets/79141552/66279220-38b7-411c-8a32-90a2985d527b)
+
+![DFD Level 1 proses Get Users](https://github.com/barpsma/DFD_ERD_API_USERS/assets/79141552/5b6c1ce3-3b13-48e6-8c41-9615faeae42a)
+
+![DFD Level 1 proses Delete Users by ID](https://github.com/barpsma/DFD_ERD_API_USERS/assets/79141552/579258c3-6ce3-479b-a07e-e43ea838d837)
+
+![DFD Level 1 proses Get Users by ID](https://github.com/barpsma/DFD_ERD_API_USERS/assets/79141552/7da864ce-f913-4114-9d73-e21dedf58066)
+
 ## Installation
 
 Clone this repo
