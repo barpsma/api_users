@@ -20,48 +20,50 @@ Open directory
 cd api_users
 ```
 
-Install package
+configure .env
 
 ```bash
-npm install
+cp .env.example .env
 ```
-
-configure .env
 
 ```bash
 nano .env
 ```
 
-configure config database
+Run in docker
+
+```bash
+docker-compose up -d --build
+```
+
+## Optional
+
+for configure config database
 
 ```bash
 nano /config/config.json
 ```
 
-Create database that has been configured in config.json
-
 ```bash
-sequelize db:create
+nano docker-compose.yml
 ```
 
-Migrate database
-
-```bash
-sequelize db:migrate
-```
+edit line 11 and 13 for password mysql
 
 ## Testing
 
+Make sure docker container already running
+
+open shell
+
 ```bash
-npm test
+docker exec -it api_users-web-1 sh
 ```
 
-## Usage
-
-Make sure nodejs already installed on your computer
+and
 
 ```bash
-npm start
+npm test
 ```
 
 ## License

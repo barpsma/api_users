@@ -9,10 +9,15 @@ exports.authUser = async (req, res, next) => {
       message: "token tidak ada",
     });
   }
-
-  const decode = jsonwebtoken.verify(token, process.env.JWT_SECRET);
-  req.id = decode.id;
-  next();
+  try {
+    const decode = jsonwebtoken.verify(token, process.env.JWT_SECRET);
+    req.id = decode.id;
+    next();
+  } catch (err) {
+    return res
+      .status(400)
+      .json({ message: "token tidak valid atau sudah expired" });
+  }
 };
 
 exports.isAdmin = async (req, res, next) => {

@@ -32,7 +32,9 @@ exports.LoginUser = async (req, res) => {
         id: dataUser.id,
       };
       //sign token dengan yang ada di .env
-      const token = await jsonwebtoken.sign(data, process.env.JWT_SECRET);
+      const token = await jsonwebtoken.sign(data, process.env.JWT_SECRET, {
+        expiresIn: 60 * 60,
+      });
       return res.status(200).json({
         token: token,
       });
